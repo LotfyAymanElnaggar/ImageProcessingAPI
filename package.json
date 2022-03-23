@@ -1,0 +1,54 @@
+{
+  "name": "imageprocessingapi",
+  "version": "1.0.0",
+  "description": "resizing images ex: localhost:3000/v1/api/image?name=xxx&width=xxx&height=xxx",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon --watch ./**/*.ts ./src/index.ts",
+    "build": "npx tsc",
+    "start:prod": "npm run build && node dist/index.js",
+    "test": "npx tsc && jasmine",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LotfyAymanElnaggar/imageProcessingApi.git"
+  },
+  "keywords": [
+    "resize",
+    "image",
+    "processing",
+    "api"
+  ],
+  "author": "LotfyAymanElnaggar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LotfyAymanElnaggar/imageProcessingApi/issues"
+  },
+  "homepage": "https://github.com/LotfyAymanElnaggar/imageProcessingApi#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^4.0.0",
+    "@types/morgan": "^1.9.3",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "jasmine": "^4.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jasmine-ts": "^0.4.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0",
+    "supertest": "^6.2.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0"
+  }
+}
