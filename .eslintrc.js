@@ -20,7 +20,7 @@ module.exports = {
     semi: ['error', 'never'],
     quotes: ['error', 'single'],
     'prettier/prettier': 2, // Means error
-    'no-console': 1, // Means warning
+    'no-console': 0,
     'no-var': 'error',
     'prefer-const': 'error',
   },
